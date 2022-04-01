@@ -1,0 +1,61 @@
+:root {
+  --color-primary: #ddd;
+  --color-secondary: #111;
+  --color-accent: #da890c;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+p {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--color-primary);
+  line-height: 1.5;
+}
+span {
+  color: var(--color-accent);
+}
+.btn {
+  position: absolute;
+  bottom: 25%;
+  text-decoration: none;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  list-style: none;
+  position: absolute;
+  bottom: 10%;
+}
+img{
+  width: 5rem;
+}

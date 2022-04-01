@@ -1,0 +1,235 @@
+:root {
+  --color-primary: #ddd;
+  --color-secondary: #000;
+  --color-accent: #Da890c;
+  /*
+    color list:  
+    #Da890c
+    
+     */
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 290vh;
+  display: grid;
+  grid-template-rows: 100vh 100vh 100vh 180px;
+}
+/*
+///header
+*/
+
+.header {
+  background-color: var(--color-secondary);
+  position: relative;
+}
+.header ul {
+  height: 2.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5rem;
+  font-size: 2rem;
+  margin: 1rem 3rem;
+  cursor: pointer;
+}
+.discription {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 13rem;
+}
+h1,
+h3 {
+  color: var(--color-primary);
+}
+h1 {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+span {
+  color: var(--color-accent);
+  font-size: 4rem;
+}
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.3s, font-size 0.5s, background-color 0.75s;
+}
+a:hover {
+  color: var(--color-accent);
+  font-size: 2.1rem;
+}
+.btn {
+  border: 1px solid var(--color-accent);
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 2rem;
+  height: 4rem;
+  width: 5rem;
+  color: var(--color-accent);
+}
+.link {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+}
+.link:hover {
+  font-size: 2.5rem;
+}
+.link::after {
+  content: ' ->';
+  transition: margin-left 0.5s;
+}
+.link:hover::after {
+  margin-left: 7px;
+}
+.btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-size: 2.1rem;
+}
+
+/*
+//// capabilities
+*/
+
+.card-container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  gap: 5rem;
+  justify-content: center;
+  margin: 5rem;
+}
+.heading {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading h2 {
+  font-size: 4rem;
+  color: var(--color-secondary);
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px #d3d3d3;
+  overflow: hidden;
+  height: 60vh;
+  transition: transform 0.5s;
+}
+.card:hover {
+  transform: translateY(-1rem);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 3rem;
+}
+.card-body {
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.card-header,
+.card-body {
+  padding: 2rem 3rem;
+}
+
+/*
+////skills
+*/
+.skill-full {
+  background-color: var(--color-secondary);
+}
+#skills {
+  display: grid;
+  grid-template-rows: 40vh 40vh;
+  gap: 5rem;
+}
+.skills-container1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 32vw 32vw 32vw;
+}
+.skills-container2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#skills h3 {
+  color: var(--color-accent);
+}
+
+#skills ul {
+  color: var(--color-primary);
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2;
+  padding: 0;
+}
+li {
+  height: 4rem;
+  transition: all 0.25s;
+}
+
+ul li:hover {
+  color: white;
+  font-size: 2.2rem;
+}
+.skill-full h2 {
+  text-align: center;
+  color: var(--color-accent);
+  font-size: 4rem;
+  margin: 2rem auto;
+}
+/*
+////footer
+*/
+
+.footer {
+  background-color: var(--color-accent);
+  position: relative;
+}
+.footer h4 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+}
+.footer p {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+}
+.footer a {
+  display: block;
+  color: var(--color-secondary);
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 45%;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
